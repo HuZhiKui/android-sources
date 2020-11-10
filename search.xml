@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lineOne">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="通讯录查询页面"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lineT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lineOne"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查询方式一 : "
+            android:textSize="30dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lineTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lineOne"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="搜索 : "
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/et_eeee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=" 请输入姓名搜索"
+            android:textSize="16dp"
+            android:maxLength="14"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lineuT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lineOne"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查询方式二 : "
+            android:textSize="30dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lineTw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lineOne"
+        android:layout_marginTop="210dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="搜索 : "
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/et_eeee1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=" 请输入电话号码搜索"
+            android:textSize="16dp"
+            android:maxLength="14"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lineFour"
+        android:layout_marginTop="320dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="4dp"
+            android:text=" 查 询 "
+            android:textSize="30dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="150dp"
+            android:id="@+id/btn_viieeww"
+            android:hint=" 查询结果"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="550dp"
+        android:layout_marginLeft="300dp"
+        android:layout_marginRight="1dp"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:id="@+id/shanchu"
+            android:text="清除"/>
+    </LinearLayout>
+</RelativeLayout>
